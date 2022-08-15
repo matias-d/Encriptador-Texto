@@ -1,6 +1,6 @@
 ### Encriptador de Texto 
 
-Sprint 01: Construye Un Encriptador De Texto Con Javascript Sprint 01: Construye Un Encriptador De Texto Con Javascript
+Sprint 01: Construye Un Encriptador De Texto Con Javascript.
 
 __________________________________________
 
