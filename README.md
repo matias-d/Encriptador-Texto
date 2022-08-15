@@ -1,6 +1,6 @@
 ### Encriptador de Texto 
 
-Sprint 01: Construye Un Encriptador De Texto Con JavascriptSprint 01: Construye Un Encriptador De Texto Con Javascript
+Sprint 01: Construye Un Encriptador De Texto Con Javascript Sprint 01: Construye Un Encriptador De Texto Con Javascript
 
 __________________________________________
 
@@ -10,9 +10,13 @@ __________________________________________
 - ##### Las llaves de encriptacion
 
 	La letra "e" es convertida para "enter"
+	
 	La letra "i" es convertida para "imes"
+	
 	La letra "a" es convertida para "ai"
+	
 	La letra "o" es convertida para "ober"
+	
 	La letra "u" es convertida para "ufat"
 
 - ##### Requisitos:
