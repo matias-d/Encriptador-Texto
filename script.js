@@ -70,7 +70,7 @@ function copiar(){
     btnCopiar.classList.add("active");
     setTimeout(function(){
       btnCopiar.classList.remove("active");
-    },1500);
+    },1200);
 }
 
 btnEncriptar.onclick = encriptar;

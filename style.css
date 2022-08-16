@@ -111,7 +111,7 @@ body{
 /*ELEMENTOS
 =======================================*/
 .img-header{
-    margin-left: 45%;
+    margin: 0 auto;
     width: 20px;
 }
 
@@ -187,7 +187,7 @@ body{
 }
 
 .icon-git{
-    margin-top: 3%;
+    margin: 3% auto;
 }
 
 
@@ -218,7 +218,7 @@ body{
 .copiar::before{
     content: "Copiado!";
     position: absolute;
-    top: 675px;
+    top: 45.5em;
     right: 41%;
     background-color: #12498d;
     color: white;
@@ -282,16 +282,18 @@ textarea::-webkit-input-placeholder {
         margin-left: 5%;
     }
 
-    .icon-git{
-        margin-top: 3%;
-        margin-right: 1%;
-    }
 
     .copiar::before{
-        top: 780px;
+        top: 785px;
         right: 44%;
     
     }
+
+    .input-mensaje,
+    .input-resultado{
+        font-size: 18px;
+    }
+
     
 }
 
