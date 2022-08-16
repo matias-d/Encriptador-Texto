@@ -19,14 +19,13 @@ function encriptar(){
         var mensajeEncriptado = mensajeEncriptado.replace(/u/igm, "ufat");
     
         inputResultado.value = mensajeEncriptado;
-  
+        inputMensaje.value = "";
 
     }else{
       inputResultado.value = "";
     }
 
-    if(mensaje === ""){
-      btnEncriptar.style.dispaly =
+    if(mensaje === ""  || mensaje.match(/^[A-Z]*$/)){
       btnCopiar.style.display = "none";
     }else{      
       btnCopiar.style.display = "show";
@@ -46,14 +45,15 @@ function desencriptar(){
     var mensajeEncriptado = mensajeEncriptado.replace(/ufat/igm, "u");
    
     inputResultado.value = mensajeEncriptado;
-    
+    inputMensaje.value = "";
 
 
-  }else if(inputMensaje.value == ""){
+  }else{
     inputResultado.value = "";
+    
   }
   
-    if(mensaje === ""){
+    if(mensaje === "" || mensaje.match(/^[A-Z]*$/)){
         btnCopiar.style.display = "none";
       }else{      
         btnCopiar.style.display = "show";
