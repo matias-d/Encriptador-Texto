@@ -37,17 +37,16 @@ __________________________________________
 	"gato" => "gaitober"
 	"gaitober" => "gato"
 
-#### :page_facing_up: [ Preview Pagina Web](https://matiasc33.github.io/Encriptador-Texto/)
-
-
------
 
 - ### Extras :sparkles:
  Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+ 
 
+#### :page_facing_up: [ Preview Pagina Web](https://matiasc33.github.io/Encriptador-Texto/)
 ----
+
 - #### Insignia de finalización :trophy:
 
-<img src = "https://user-images.githubusercontent.com/83984969/183712662-ba574cb8-4870-4329-8e5e-b8d15de2eb41.png" width = "400" height= "400"  >
+<img src = "https://user-images.githubusercontent.com/83984969/183712662-ba574cb8-4870-4329-8e5e-b8d15de2eb41.png" width = "350" height= "350"  >
 
 
