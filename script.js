@@ -53,12 +53,12 @@ function desencriptar(){
     
   }
   
-    if(mensaje === "" || mensaje.match(/^[A-Z]*$/)){
-        btnCopiar.style.display = "none";
-      }else{      
+   if(mensaje === "" || mensaje.match(/^[A-Z]*$/)){
+      btnCopiar.style.display = "none";
+   }else{      
         btnCopiar.style.display = "show";
         btnCopiar.style.display = "initial";  
-      }
+    }
     
 }
 
