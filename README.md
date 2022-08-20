@@ -1,7 +1,7 @@
-## :lock: Encriptador de Texto :lock:                                                        
+## :lock: Encriptador de Texto :lock:
  
 Sprint 01: Construye un encriptador de texto con Javascript.
-__________________________________________
+_______________________________________________________________________________________________________________________________________________
 
 - ###  Descripción :rocket:
   Aplicación que encripta textos, así podrás intercambiar mensajes secretos con otras personas que sepan el secreto de la encriptación utilizada.
@@ -36,6 +36,14 @@ __________________________________________
 
 - ### Extras :sparkles:
  Un botón que copie el texto encriptado/desencriptado para la sección de transferencia, o sea que tenga la misma funcionalidad del ctrl+C o de la opción "copiar" del menú de las aplicaciones.
+ 
+ ----------
+ 
+  ### <p align="center">Inisignia de finalización :tada:</p>
+ 
+ <p align="center">
+  <img src="https://camo.githubusercontent.com/fe90aaf407b71c6dcbc749c24b8e88c4ef2d4b923211d6b7ad56cf72a0c002ab/68747470733a2f2f63646e2e646973636f72646170702e636f6d2f6174746163686d656e74732f3936333133373630313135323336343535342f313030353536313032353330383933303138382f636d735f66696c65735f31303232345f3136353934363237343642616467655f5368617265725f416c7572615f4368616c6c656e67654f7261636c654f4e455f3230303078323030305f56332e706e67" width = 250 height = 250 />
+</p>
  
 -----------
 #### :page_facing_up: [ Preview Pagina Web](https://matiasc33.github.io/Encriptador-Texto/) 
