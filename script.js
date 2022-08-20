@@ -6,7 +6,7 @@ const btnEncriptar = document.querySelector("#btn-encriptar");
 const btnDesencriptar = document.querySelector("#btn-desen");
 const btnCopiar = document.querySelector("#btn-copiar");
 
-
+const condicion = document.querySelector("#condict");
 
 function encriptar(){
     if((inputMensaje.value.match(/^[a-z ]*$/))){
@@ -19,43 +19,56 @@ function encriptar(){
         var mensajeEncriptado = mensajeEncriptado.replace(/u/igm, "ufat");
     
         inputResultado.value = mensajeEncriptado;
+
+        //Resets de valores
         inputMensaje.value = "";
+        condicion.style.color = "black";
+        inputMensaje.style.border = "none";
 
     }else{
+      btnCopiar.style.display = "none";
       inputResultado.value = "";
+      condicion.style.color = "red";
+      inputMensaje.style.border = "2px solid red";
     }
 
-    if(mensaje === ""  || mensaje.match(/^[A-Z]*$/)){
+    if(mensaje === "" ){   
       btnCopiar.style.display = "none";
-    }else{      
+    }else{
       btnCopiar.style.display = "show";
-      btnCopiar.style.display = "initial";  
+      btnCopiar.style.display = "initial"; 
     }
+
 }
 
 function desencriptar(){
 
-  if((inputMensaje.value.match(/^[a-z ]*$/))){
-    var mensaje = inputMensaje.value;
-    
-    var mensajeEncriptado = mensaje.replace(/enter/igm, "e");
-    var mensajeEncriptado = mensajeEncriptado.replace(/ober/igm, "o");
-    var mensajeEncriptado = mensajeEncriptado.replace(/imes/igm, "i");
-    var mensajeEncriptado = mensajeEncriptado.replace(/ai/igm, "a");
-    var mensajeEncriptado = mensajeEncriptado.replace(/ufat/igm, "u");
-   
-    inputResultado.value = mensajeEncriptado;
-    inputMensaje.value = "";
+    if((inputMensaje.value.match(/^[a-z ]*$/))){
+        var mensaje = inputMensaje.value;
+        
+        var mensajeEncriptado = mensaje.replace(/enter/igm, "e");
+        var mensajeEncriptado = mensajeEncriptado.replace(/ober/igm, "o");
+        var mensajeEncriptado = mensajeEncriptado.replace(/imes/igm, "i");
+        var mensajeEncriptado = mensajeEncriptado.replace(/ai/igm, "a");
+        var mensajeEncriptado = mensajeEncriptado.replace(/ufat/igm, "u");
+      
+        inputResultado.value = mensajeEncriptado;
 
+        //Resets de valores
+
+        inputMensaje.value = "";
+        condicion.style.color = "black";
+        inputMensaje.style.border = "none";
 
   }else{
     inputResultado.value = "";
-    
+    inputMensaje.style.border = "2px solid red";
+    condicion.style.color = "red";
   }
   
-   if(mensaje === "" || mensaje.match(/^[A-Z]*$/)){
+   if(mensaje === "" ){
       btnCopiar.style.display = "none";
-   }else{      
+   }else{
         btnCopiar.style.display = "show";
         btnCopiar.style.display = "initial";  
     }

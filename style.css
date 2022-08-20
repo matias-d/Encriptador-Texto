@@ -30,7 +30,7 @@ body{
     grid-area: header;
     display: flex;
     align-items: center;
-    margin-left: 10%;
+    margin: 0 auto;
 }
 
 .input-entrada{
@@ -111,8 +111,7 @@ body{
 /*ELEMENTOS
 =======================================*/
 .img-header{
-    margin: 0 auto;
-    width: 20px;
+    width: 18px;
 }
 
 .input-mensaje{
@@ -142,9 +141,9 @@ body{
     margin: 0 auto;
     width: 70%;
     border: #0A3871 solid 2px;
-    border-radius: 15px;
-    background-color: white;
-    font-size: 12px;
+    border-radius: 10px;
+    background-color: rgb(243, 245, 252);
+    font-size: 16px;
     color: #0A3871;
     font-weight: bold;
     transition: all 0.5s ease;
@@ -157,6 +156,7 @@ body{
     border-radius: 10px;
     color: #0A3871;
     font-size: 15px;
+    background-color: rgb(243, 245, 252);
     display: none;
     box-shadow: 0px 10px 10px -8px rgba(0, 0, 0, 0.08);
     transition: all 0.5s ease;
@@ -176,7 +176,7 @@ body{
     font-size: 17px;
     outline: none;
     border-radius: 10px;
-    box-shadow: 0px 24px 32px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 25px 35px 30px rgba(0, 0, 0, 0.08);
 }
 
 
@@ -201,18 +201,23 @@ body{
 }
 
 .btn-desencriptar:hover{
-   background-color: #cdd6dd;
+   background-color: #e4e3ed;
    cursor:pointer;
 }
 
 .copiar:hover{
-    background-color: #dae1e6;
+    background-color:#e4e3ed;
     cursor:pointer;
 }
 
 .copiar:active{
     color: white;
     background-color: #51f07c;
+    transition:  0.3s all;
+}
+
+.copiar.active:before{
+
 }
 
 .copiar::before{
@@ -240,12 +245,13 @@ body{
 } 
 
 .btn-desencriptar:active{
-    background-color: #fcfcfc;
+    background-color:rgb(243, 245, 252);
 }
 
 textarea::-webkit-input-placeholder {
     color: #092f5e;
   }
+
 
 
 /* RESPONSIVE
@@ -272,18 +278,15 @@ textarea::-webkit-input-placeholder {
     }
 
     .btn-encriptar{
-        margin-left: 25%;
+        width: 75%;
+        margin-left: 22%;
     }
 
     .btn-desencriptar{
-        margin-right: 25%;
+        width: 68.7%;
+        margin-right: 22%;
     }
     
-    .header{
-        margin-left: 5%;
-    }
-
-
     .copiar::before{
         top: 785px;
         right: 44%;
@@ -295,7 +298,10 @@ textarea::-webkit-input-placeholder {
         font-size: 18px;
     }
 
-    
+    .img-header{
+        width: 25px;
+    }
+
 }
 
 @media (min-width: 900px){
@@ -311,14 +317,14 @@ textarea::-webkit-input-placeholder {
     }
 
     .header{
-        margin-right: auto;
-        margin-top: 2%;
-        grid-column: 2 / -6; 
+        grid-column: span 1;
+        margin-left: 10%;
     }
 
 
     .img-header{
-        width: 30px;
+        margin: 0;
+        width: 25px;
     }
 
     .input-mensaje{
@@ -352,27 +358,29 @@ textarea::-webkit-input-placeholder {
     }
 
     .btn-encriptar{
+        margin-left: 45%;
         width: 60%;
-        margin-left: 35%;
     }
 
     .btn-desencriptar{
-        width: 60%;
-        margin-right: 35%;
+        width: 55%;
+        margin-right: 25%;
         
     }
 
     .icon-git:hover{
+        transition: all 0.5s ease;
         transform: scale(1.2);
     }
 
     .devel{
         position: relative;
-        top: 18%;
+        top: 25%;
     }
 
     .copiar::before{
         top: 67%;
-        right: 13%;
+        right: 18.6%;
     }
+
 }
