@@ -216,14 +216,10 @@ body{
     transition:  0.3s all;
 }
 
-.copiar.active:before{
-
-}
-
 .copiar::before{
     content: "Copiado!";
     position: absolute;
-    top: 45.5em;
+    top: 670px;
     right: 41%;
     background-color: #51f07c;
     color: white;
@@ -234,15 +230,26 @@ body{
     display: none;
 }
 
-
+.copiar::after{
+    content: "";
+    position: absolute;
+    top: 696px;
+    right: 49%;
+    width: 10px;
+    height: 10px;
+    background-color: #51f07c;
+    transform: rotate(45deg);
+    display: none;
+}
 
 .btn-encriptar:active{
     background-color: #12498d;
 }
 
-.copiar.active:before{
+.copiar.active:before,
+.copiar.active:after{
     display: block;
-} 
+}
 
 .btn-desencriptar:active{
     background-color:rgb(243, 245, 252);
@@ -288,9 +295,14 @@ textarea::-webkit-input-placeholder {
     }
     
     .copiar::before{
-        top: 785px;
+        top: 780px;
         right: 44%;
     
+    }
+
+    .copiar::after{
+        top: 808px;
+        right: 49.5%;
     }
 
     .input-mensaje,
@@ -382,5 +394,9 @@ textarea::-webkit-input-placeholder {
         top: 67%;
         right: 18.6%;
     }
-
+    .copiar::after{
+        top: 71.2%;
+        right: 21.2%;
+        
+    }
 }
