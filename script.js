@@ -26,13 +26,12 @@ function encriptar(){
         inputMensaje.style.border = "none";
 
     }else{
-      btnCopiar.style.display = "none";
       inputResultado.value = "";
       condicion.style.color = "red";
       inputMensaje.style.border = "2px solid red";
     }
 
-    if(mensaje === "" ){   
+    if(mensaje === "" || !(inputMensaje.value.match(/^[a-z ]*$/))){   
       btnCopiar.style.display = "none";
     }else{
       btnCopiar.style.display = "show";
@@ -66,7 +65,7 @@ function desencriptar(){
     condicion.style.color = "red";
   }
   
-   if(mensaje === "" ){
+   if(mensaje === "" || !(inputMensaje.value.match(/^[a-z ]*$/))){
       btnCopiar.style.display = "none";
    }else{
         btnCopiar.style.display = "show";
