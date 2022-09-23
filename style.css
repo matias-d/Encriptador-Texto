@@ -116,6 +116,7 @@ body{
 }
 
 .input-mensaje{
+    padding: 10px;
     resize: none;
     width: 80%;
     color: #0A3871;

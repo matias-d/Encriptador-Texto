@@ -8,71 +8,58 @@ const btnCopiar = document.querySelector("#btn-copiar");
 
 const condicion = document.querySelector("#condict");
 
+function resetValue(){
+  inputMensaje.value = "";
+  condicion.style.color = "black";
+  inputMensaje.style.border = "none";
+}
+
+function resetValueElse(){
+  btnCopiar.style.display = "none";
+  inputResultado.value = "";
+  inputMensaje.style.border = "2px solid red";
+  condicion.style.color = "red";
+}
+
+
 function encriptar(){
-    if((inputMensaje.value.match(/^[a-z ]*$/))){
-        var mensaje = inputMensaje.value;
-
-        var mensajeEncriptado = mensaje.replace(/e/igm, "enter");
-        var mensajeEncriptado = mensajeEncriptado.replace(/o/igm, "ober");
-        var mensajeEncriptado = mensajeEncriptado.replace(/i/igm, "imes");
-        var mensajeEncriptado = mensajeEncriptado.replace(/a/igm, "ai");
-        var mensajeEncriptado = mensajeEncriptado.replace(/u/igm, "ufat");
-    
-        inputResultado.value = mensajeEncriptado;
-
-        //Resets de valores
-        inputMensaje.value = "";
-        condicion.style.color = "black";
-        inputMensaje.style.border = "none";
-
-    }else{
-      inputResultado.value = "";
-      condicion.style.color = "red";
-      inputMensaje.style.border = "2px solid red";
+  let wordsKey = ['enter', 'ober', 'imes', 'ai', 'ufat'];
+  let wordsEncript = [/e/igm, /o/igm, /i/igm, /a/igm,/u/igm]
+  let message = inputMensaje.value; 
+  for(let i = 0; i < message.length; i++){
+    if((message.match(/^[a-z ]*$/))){
+    message = message.replace(wordsEncript[i], wordsKey[i])
     }
-
-    if(mensaje === "" || !(inputMensaje.value.match(/^[a-z ]*$/))){   
-      btnCopiar.style.display = "none";
-    }else{
-      btnCopiar.style.display = "show";
-      btnCopiar.style.display = "initial"; 
-    }
-
+  }
+  inputResultado.value = message;
+  resetValue()
+  
+  if((message.match(/^[A-Z ]*$/))){
+    resetValueElse()
+  }else{
+    btnCopiar.style.display = "show";
+    btnCopiar.style.display = "initial";  
+  }
 }
 
 function desencriptar(){
-
-    if((inputMensaje.value.match(/^[a-z ]*$/))){
-        var mensaje = inputMensaje.value;
-        
-        var mensajeEncriptado = mensaje.replace(/enter/igm, "e");
-        var mensajeEncriptado = mensajeEncriptado.replace(/ober/igm, "o");
-        var mensajeEncriptado = mensajeEncriptado.replace(/imes/igm, "i");
-        var mensajeEncriptado = mensajeEncriptado.replace(/ai/igm, "a");
-        var mensajeEncriptado = mensajeEncriptado.replace(/ufat/igm, "u");
-      
-        inputResultado.value = mensajeEncriptado;
-
-        //Resets de valores
-
-        inputMensaje.value = "";
-        condicion.style.color = "black";
-        inputMensaje.style.border = "none";
-
-  }else{
-    inputResultado.value = "";
-    inputMensaje.style.border = "2px solid red";
-    condicion.style.color = "red";
+  let wordsKey = [/enter/igm, /ober/igm, /imes/igm, /ai/igm, /ufat/igm];
+  let wordsEncript = ['e', 'o', 'i', 'a', 'u']
+  let message = inputMensaje.value; 
+  for(let i = 0; i < message.length; i++){
+    message = message.replace(wordsKey[i], wordsEncript[i])
   }
-  
-   if(mensaje === "" || !(inputMensaje.value.match(/^[a-z ]*$/))){
-      btnCopiar.style.display = "none";
-   }else{
-        btnCopiar.style.display = "show";
-        btnCopiar.style.display = "initial";  
-    }
-    
+  inputResultado.value = message;
+  resetValue();
+
+  if((message.match(/^[A-Z ]*$/))){
+    resetValueElse()
+  }else{
+    btnCopiar.style.display = "show";
+    btnCopiar.style.display = "initial";  
+  }
 }
+
 
 function copiar(){
     inputMensaje.value = "";
