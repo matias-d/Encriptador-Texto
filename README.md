@@ -46,6 +46,6 @@ ________________________________________________________________________________
 </p>
  
 -----------
-#### :page_facing_up: [ Preview Pagina Web](https://matias-d.github.io/Encriptador-Texto/) 
+#### :page_facing_up: [ Preview de la Pagina Web](https://matias-d.github.io/Encriptador-Texto/) 
 
 
